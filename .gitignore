@@ -1,0 +1,42 @@
+# R / RStudio session state
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rcheck/
+.Renviron
+
+# Compiled objects and platform-dependent binaries
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.exe
+
+# Generated R Markdown output
+reproducibility_report.html
+reproducibility_report.knit.md
+reproducibility_report.utf8.md
+reproducibility_report_files/
+reproducibility_report_cache/
+
+# Temporary OS / editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Local renv libraries and installation artifacts
+renv/library/
+renv/staging/
+renv/local/
+renv/cellar/
+renv/sandbox/
+renv/lock/
+renv/python/
+
+# ZIP packaging artifacts
+*.zip

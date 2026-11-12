@@ -1,0 +1,8 @@
+# Preserve Unix LF endings for reproducible SHA-256 hashes across OSes.
+*.R text eol=lf
+*.Rmd text eol=lf
+*.cpp text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

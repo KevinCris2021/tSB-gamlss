@@ -1,0 +1,36 @@
+---
+title: "Reproducible validation of the t-Simplex-Binomial model"
+subtitle: "Interior GAMLSS implementation and limiting distributions on the tau scale"
+date: "2026-11-11"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+---
+
+## Scope
+
+This report evaluates the implementation from an **independent R session** without relying on objects from the exploratory notebook. The limits on the \(\tau\) scale are handled by an auxiliary layer and do not replace the GAMLSS RS estimator.
+
+\[
+Z_i\mid Y_i\sim\operatorname{Bin}(m_i,Y_i),\qquad
+Y_i\sim t\operatorname{Simplex}(\mu_i,\phi_i,\nu_i),\qquad
+\tau_i=(1+\nu_i)^{-1}.
+\]
+
+## Main validation
+
+```{r evaluation, echo=TRUE, message=TRUE, warning=TRUE}
+# Knit this report from the project root directory.
+source("run_all_tests.R", local = TRUE)
+```
+
+## Session information
+
+```{r session}
+utils::sessionInfo()
+```
+
+## Reproducibility note
+
+Results depend on R and package versions, the compiler, numerical libraries, and quadrature precision. The checks cover specific scenarios and do not establish a uniform error bound over the entire parameter space. The weighted population GAMLSS example can also be run separately using `Rscript run_all_tests.R --fit`.

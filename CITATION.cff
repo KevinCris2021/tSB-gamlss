@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: >-
+  If you use tSB-gamlss in your research, please cite this software.
+  Cite the associated scientific publication separately when available.
+type: software
+title: "tSB-gamlss: t-Simplex-Binomial distribution and regression tools for R"
+authors:
+  - given-names: "Kevin Cristopher"
+    family-names: "Gargate Osorio"
+abstract: >-
+  Research implementation of the t-Simplex-Binomial distribution and regression
+  tools using Rcpp, Gauss-Legendre quadrature, and the GAMLSS framework,
+  with distribution diagnostics, expected-information calculations,
+  boundary evaluations, and reproducibility tests.
+keywords:
+  - "t-Simplex-Binomial"
+  - "GAMLSS"
+  - "Rcpp"
+  - "bounded count data"
+  - "research software"
+license: MIT
